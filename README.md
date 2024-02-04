@@ -2,7 +2,8 @@ This project is a simple calculator application that consists of a React web fro
 The application is containerized using Docker and can be deployed easily.
 
 ## Deployment
-Prerequisites
+# Prerequisites
+
 Make sure you have Docker and Docker Compose installed on your machine.
 
 Docker Installation Guide
