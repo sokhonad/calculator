@@ -1,7 +1,7 @@
 This project is a simple calculator application that consists of a React web front-end and a FastAPI back-end using a MySQL database for storage.
 The application is containerized using Docker and can be deployed easily.
 
-Deployment
+## Deployment
 Prerequisites
 Make sure you have Docker and Docker Compose installed on your machine.
 
@@ -10,7 +10,7 @@ Docker Compose Installation Guide
 Getting Started
 Clone the repository:
 ```bash
-git clone https://github.com/your-username/calculator-app.git
+git clone https://github.com/sokhonad/calculator.git
 ```
 Navigate to the project directory:
 
@@ -37,3 +37,6 @@ To stop the application and clean up Docker resources, use the following command
 ```bash
 docker-compose down
 ```
+
+## Author
+- [@sokhonad](https://github.com/sokhonad)
