@@ -37,7 +37,7 @@ Stopping the Project
 To stop the application and clean up Docker resources, use the following command:
 
 ```bash
-docker-compose down
+docker compose down
 ```
 
 ## Author
