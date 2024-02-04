@@ -1,0 +1,47 @@
+version: '3'
+
+services:
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile.react
+    ports:
+      - "3000:3000"
+    depends_on:
+      - api
+    networks:
+      - mynetwork
+
+  api:
+    build:
+      context: .
+      dockerfile: Dockerfile.fastapi
+    ports:
+      - "8000:8000"
+    environment:
+      - MYSQL_HOST=db
+      - MYSQL_PORT=3306
+      - MYSQL_DATABASE=calculator_bd
+      - MYSQL_USER=root
+      - MYSQL_PASSWORD=sokh
+    depends_on:
+      - db
+    networks:
+      - mynetwork
+
+  db:
+    image: "mysql:latest"
+    environment:
+      MYSQL_ROOT_PASSWORD: "sokh"
+      MYSQL_DATABASE: "calculator_bd"
+    volumes:
+      - mysql_data:/var/lib/mysql
+    networks:
+      - mynetwork
+
+networks:
+  mynetwork:
+    driver: bridge
+
+volumes:
+  mysql_data:
