@@ -29,7 +29,8 @@ Accessing the Application
 Web Front-end:
 
 Open your browser and go to http://localhost:3000.
-API Documentation:
+
+## API Documentation:
 
 The FastAPI documentation is available at http://localhost:8000/docs.
 Stopping the Project
