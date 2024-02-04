@@ -9,16 +9,19 @@ Docker Installation Guide
 Docker Compose Installation Guide
 Getting Started
 Clone the repository:
+```bash
 git clone https://github.com/your-username/calculator-app.git
-
+```
 Navigate to the project directory:
 
-bash
+```bash
 cd calculator-app
+```
 Build and run the application using Docker Compose:
 
-bash
+```bash
 docker-compose up -d
+```
 This command will build Docker images, start containers, and configure the network. The application will be available at http://localhost:3000.
 
 Accessing the Application
@@ -31,5 +34,6 @@ The FastAPI documentation is available at http://localhost:8000/docs.
 Stopping the Project
 To stop the application and clean up Docker resources, use the following command:
 
-bash
+```bash
 docker-compose down
+```
