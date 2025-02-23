@@ -17,6 +17,7 @@ Navigate to the project directory:
 
 ```bash
 cd calculator
+git clone https://github.com/sokhonad/calculator-app.git
 ```
 Build and run the application using Docker Compose:
 
