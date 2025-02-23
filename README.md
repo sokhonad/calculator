@@ -22,7 +22,10 @@ git clone https://github.com/sokhonad/calculator-app.git
 Build and run the application using Docker Compose:
 
 ```bash
-docker compose up --build
+ docker compose up --build
+```
+```bash
+ docker compose up --build
 ```
 This command will build Docker images, start containers, and configure the network. The application will be available at http://localhost:3000.
 
