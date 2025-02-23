@@ -40,6 +40,10 @@ To stop the application and clean up Docker resources, use the following command
 ```bash
 docker compose down
 ```
+Tout supprimer: Attention
+```bash
+docker system prune --all
+```
 
 ## Author
 - [@sokhonad](https://github.com/sokhonad)
